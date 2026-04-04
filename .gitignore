@@ -1,0 +1,14 @@
+# External files and big data
+.venv/
+__pycache__/
+*.csv
+*.twb
+*.twbx
+*.hyper
+*.crdownload
+*.zip
+
+# Ignore config and temp files
+.vscode/
+cols.json
+~*.twbr
