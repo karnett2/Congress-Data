@@ -1,4 +1,5 @@
 # External files and big data
+venv/
 .venv/
 __pycache__/
 *.csv
