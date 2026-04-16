@@ -57,7 +57,7 @@ fig = px.bar(gen_pct_long, x='generation', y='percentage', color='generation',
              color_discrete_sequence=px.colors.qualitative.Set3)
 
 # Add interactivity: clean hover text
-fig.update_traces(hovertemplate='<b>Generation:</b> %{x}<br><b>Percentage:</b> %{y:.1f}%<extra></extra>')
+fig.update_traces(textposition='inside', textfont=dict(size=11, color='black'))
 
 # Remove x-axis tick labels and sort the bars/legend from greatest to lowest overall
 fig.update_xaxes(showticklabels=False, categoryorder='total descending')
@@ -272,4 +272,4 @@ with open(dashboard_path, 'w', encoding='utf-8') as f:
 print(f"Dashboard successfully generated at: {dashboard_path}")
 webbrowser.open(f"file://{dashboard_path}")
 
-## Task 4
+
